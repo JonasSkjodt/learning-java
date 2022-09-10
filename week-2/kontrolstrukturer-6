@@ -1,0 +1,23 @@
+/**
+ * Du skal nu skrive et program som gør følgende ved brug af en løkke.
+ * Programmet bør starte med at initialisere en variabel af typen heltal (input).
+ * Hvis input er lige, skal det divideres med 2. Hvis input er ulige skal det
+ * ganges med 3 og 1 skal ligges til. Programmet er færdigt når resultatet er lig
+ * 1. Notér nogle tanker om hvilken løkke du har anvendt og hvorfor – diskutér
+ * dem herefter med din(e) nabo(er). 
+ */
+ 
+ public class loopers {
+    public static void lookfortheone(){
+        int input = 3;
+        
+        while(input != 1) {             // end the while loop when the number hits 1
+            System.out.println(input);
+            if(input % 2 == 0) {        // if its even then do this
+                input = input / 2;
+            } else {                    // if its odd then do this
+                input = input * 3 + 1;
+            }
+        }
+    }
+}
