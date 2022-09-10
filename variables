@@ -1,0 +1,17 @@
+/**
+ * Øvelse 3
+ * Gentag nu øvelse 2, men opbevar værdierne i tre forskellige variable hhv.
+ * kaldt ’year’, ’greeting’, og ’abs_nul’.
+ */
+ 
+ public class assignment3 {
+  public static void main(String[] args) {
+    int year        = 2022;
+    String greeting = "Hej, mit navn er xxx!";
+    double abs_nul  = "-273.15";
+    
+    System.out.println(year);
+    System.out.println(greeting);
+    System.out.println(abs_nul);
+  }
+ }
