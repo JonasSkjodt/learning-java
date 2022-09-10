@@ -1,0 +1,28 @@
+/**
+ * If you have ever visited a canyon or a cave, you may have yelled and heard the echo of your own voice.
+ * In this problem, you should simulate that effect:
+ * 
+ * Hello! Hello! Hello!
+ 
+ * Your program will be given as input a single word, and it should print out that word three times,
+ * separating the words with spaces.
+ * 
+ * Input
+ * Input is a single line, containing exactly one word. The only characters used are upper and/or lowercase letters (a–z).
+ *  The word contains at least one and at most 15 characters.
+ * 
+ * Output
+ * Output the given word three times, separated by spaces.
+ */ 
+
+import java.util.Scanner;
+
+public class echoechoecho {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    String word = sc.nextLine();
+    String echo = word + " " + word + " " + word;
+    
+    System.out.println(echo);
+  }
+}
