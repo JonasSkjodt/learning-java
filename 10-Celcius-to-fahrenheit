@@ -1,0 +1,30 @@
+/**
+ * Hvis vi skal omregne fra celsius til fahrenheit skal vi: gange med 1.8 og tilføje
+ * 32. Hvis vi skal regne den anden vej skal vi: trække 32 fra og dividere med
+ * 1.8.
+ * 
+ * Lav nu et program hvor du ved brug af en variabel regner fra celsius til
+ * fahrenheit og herefter ved brug af en anden variabel regner fra fahrenheit til
+ * celsius.
+ */
+
+public class temperatur {
+  public static void celcius(String[] args) {
+    int celcius   = 100;
+    double result = (celcius * 1.8) + 32;
+    System.out.println("It is celcius " + celcius + " or in fahrenheit: " + result + ".");
+  }
+  
+  public static void fahrenheit(String[] args) {
+    int fahrenheit  = 212;
+    double result   = (fahrenheit - 32) / 1.8;
+    System.out.println("It is fahrenheit " + fahrenheit + " or in celcius: " + result + ".");
+  }
+}
+
+/**
+ * BONUS: Hvis man så skulle undersætte bog titlen 'Fahrenheit 451' hvad ville den så
+ * hedde?
+ * Svar: Celcius 232.7.
+ * Uddybbende svar: Ændr int fahrenheit = 212; i fahrenheit metoden til: int fahrenheit = 451; og kør programmet.
+ */
