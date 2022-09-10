@@ -1,0 +1,33 @@
+/**
+ * Problem C: Cold-puter Science
+ * 
+ * Input
+ * The input is composed of two lines.
+ * The first line contains a single positive integer n (1 <= n <= 100) that specifies the number of temperatures
+ * collected by the University of Chicago Weather Service. The second line contains  temperatures, each separated
+ * by a single space. Each temperature is represented by an integer t (-1 000 000 <= t <=t 1 000 000)
+ * 
+ * Output
+ * You must print a single integer: the number of temperatures strictly less than zero.
+ */
+ 
+import java.util.Scanner;
+ 
+public class cold {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int n       = sc.nextInt();
+    int count   = 0;
+    
+    int[] numbers = new int[n];
+    
+    for(int i = 0; i < n; i = i + 1) {
+        numbers[i] = sc.nextInt();
+        
+        if(numbers[i] < 0) {
+            count = count + 1;
+        }
+    }
+    System.out.println(count);
+  }
+}
