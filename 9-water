@@ -1,0 +1,26 @@
+/**
+ * Hvor meget vand skal jeg drikke? Ifølge Nettofitness.dk skal man drikke
+ * ~35ml per kilo man vejer. Lav nu et program som anvender to variable; én
+ * der repræsenterer vægt (weight) og én der repræsenterer mængden vi skal
+ * drikke per kilo (amount). Lav herefter udregningen og print resultatet.
+ *
+ * BONUS: Som bonus øvelse kan du udvide øvelsen således at det er varmt skal man
+ * drikke ekstra (fx +10%). Tilføj en variabel (extra), som repræsenter den
+ * ekstramængde vandmængde man skal drikke; fx 10 (svarend til +10% ekstra
+ * vand).
+ */
+ 
+ public class water {
+  public static void main(String[] args) {
+    double weight = 80.0; // kg
+    double amount = 0.035;
+    double result = weight * amount;
+    
+    System.out.println("You should drink " + result + " liters of water.");
+    
+    // BONUS assignment
+    double extra = (result * 10) / 100; // 10% af resultatet fra før
+    double warm = extra + result;
+    System.out.println("If it's warm, then drink: " + warm + " liters of water.");
+  }
+ }
