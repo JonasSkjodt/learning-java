@@ -1,0 +1,30 @@
+/**
+ * Vi skal nu forbedre opgaven fra sidste gang ’Hvor meget vand?’. Helt konkret
+ * ønsker vi nu at sammenligne mængden af vand en person drikker versus
+ * hvor meget de bør drikke. Du skal således fylde de manglende kodestykker
+ * ud nedenfor.
+ * OPGAVE:
+ * Hvis 'actual' er mindre end 'result_liters' --> udskriv at man drikker for lidt
+ * Hvis 'actual' er større end 'result_liters' --> udskriv at man drikker for meget
+ * Hvis 'actual' er større end 4 --> man bør ikke få så meget vand! (jf. nettofitness.dk)
+ */
+ 
+class Water {
+ static void water(){
+     double actual = 2.0; // mængden (l) man drikker
+     double weight = 80.0; 
+     double amount = 35.0;
+     double result = weight*amount;
+     double result_liters = result * 0.001;
+     System.out.println("Du bør drikke " + result_liters +
+     "L og drikker faktisk " + actual + " L. ");
+     
+        if (actual < result_liters) {
+            System.out.println("Man drikker for lidt");
+        } else if (actual > result_liters) {
+            System.out.println("Man drikker for meget");
+        } else if (actual > 4) {
+            System.out.println("Man bør ikke få så meget vand!");
+        }
+ }
+}
