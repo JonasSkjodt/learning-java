@@ -1,0 +1,14 @@
+/**
+ * Hvad udskriver følgende program (og hvorfor)
+ *
+ * int menu = 75; // Pris for en (Big Tasty) MENU (i kr)
+ * int burger = 45; // Pris for en (Big Tasty) BURGER (i kr)
+ * System.out.println(menu – burger * 2);
+ *
+ */
+ 
+ // programmet udskriver -15, da burger*2 tager prædecens. (dvs -45*2 = -90 + 75 = -15)
+ // Vi kan løse problemet ved at indsætte paranteser i regnestykket
+ // feks:
+ // System.out.println( (menu – burger) * 2);
+ // så prisen bliver 60 kr (dvs (75-45) * 2 = 30 * 2 = 60)
