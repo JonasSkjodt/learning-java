@@ -1,0 +1,14 @@
+/*
+ * Øvelse 2
+ * Lav et program der udskriver 2022 ved brug af et heltal.
+ * Lav et program der udskriver ”Hej, mit navn er xxx!”.
+ * Lav et program der udskriver -273.15.
+ */
+
+class letsprintsomestuff {
+  static void main(String[] args) {
+    System.out.println("2022");
+    System.out.println("Hej, min navn er xxx!");
+    System.out.println("-273.15");
+  } 
+}
