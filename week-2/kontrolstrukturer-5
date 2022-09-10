@@ -1,0 +1,24 @@
+/**
+ * Lav et stykke program som itererer gennem 5-tabellen og printer hvert tal der
+ * indgår I. Løs både opgaven med en while løkke og en for løkke. Notér nogle
+ * tanker om hvilken løkke du foretrækker og hvorfor – diskutér dem herefter
+ * med din(e) nabo(er).
+ */
+ 
+public class femtabel {
+  public static void whileloop(String[] args) {
+    // The while loop is usually used for when we don't know the length of the loop
+    int i = 0;
+    while(i <=50){
+      System.out.println(i);
+      i = i + 5;
+    }
+  }
+  
+  public static void forloop() {
+    // The for loop is usually used when we know the length of the loop
+    for(int i = 0; i <=50;i = i + 5) {
+      System.out.println(i);
+    }
+  }
+}
