@@ -1,0 +1,17 @@
+/**
+ * Hvad udskriver følgende program (og hvorfor)?
+ 
+ * int year = 2022;
+ * String s = "Next year is " + year + 1;
+ * System.out.println(s);
+ *
+ * Hvordan kan vi fikse programmet, så vi får det rigtige svar?
+ */
+ 
+       // programmet skriver 20221, da 1'tallet ses som en string.
+       // Vi kan fikse det, ved at skrive + 1 i variablen "year" således:
+       // int year = 2022 + 1;
+       // og slette det i stringen, så hele koden ser sådan ud:
+       //  int year = 2022 + 1;
+       // String s = "Next year is " + year;
+       // System.out.println(s);
