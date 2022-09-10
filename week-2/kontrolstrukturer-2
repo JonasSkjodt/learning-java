@@ -1,0 +1,22 @@
+/**
+ * Anvend if-else udtrykket til at sørge for at koden nedenunder udskriver
+ * hvorvidt tallet er lige eller ulige. Her kan du med fordel anvende modulo
+ * operatoren (%) som giver resten ved heltalsdivision, e.g., ’5 % 2’ evaluerer til
+ * ’1’, 10 % 2 evaluerer til ’0’.
+ */
+
+import java.util.Scanner;
+
+public class evenorodd {
+     public static void even(){
+         Scanner sc = new Scanner(System.in);
+         
+         int num = sc.nextInt();
+         
+         if(num % 2 == 0) {
+             System.out.println("even");
+         } else {
+              System.out.println("odd");
+         }
+    }
+}
