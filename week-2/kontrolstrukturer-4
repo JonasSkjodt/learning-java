@@ -1,0 +1,29 @@
+/**
+ * Løs opgaven nedenunder som printer et stykke tekst relateret til hvilken alder du har:
+ * 0-2 => du er en baby
+ * 3-12 => du er et barn
+ * 13-19 => du er en teenager
+ * 20+ => du er voksen
+ * 67+ => du er en pensionist
+ */
+ 
+ import java.util.Scanner;
+
+class Age {
+ static void alder(){
+     Scanner sc = new Scanner(System.in);
+     int alder = sc.nextInt(); // alderen vi tester lige nu.
+     
+    if( alder >= 0 && alder <=2) {
+        System.out.println("Du er en baby.");
+    } else if(alder >= 3 && alder <=12) {
+        System.out.println("Du er et barn.");
+    } else if(alder >= 13 && alder <=19) {
+        System.out.println("Du er en teenager.");
+    } else if(alder >= 20 && alder <=66) {
+        System.out.println("Du er voksen.");
+    } else if(alder >= 67) {
+        System.out.println("Du er en pensionist.");
+    }
+ }
+}
