@@ -1,0 +1,18 @@
+/**
+ * Med den igangværende work from “home” revolution befinder mange ITprofessionelle sig pludselig i varme lande året rundt, hvilket kan ses på
+ * antallet af hawaii-skjorter i diverse Zoom-opkald. Eftersom GRPRO
+ * forelæsningerne alligevel bliver lagt op på Learn.it, undrer du dig over hvor
+ * langt en SU rækker på Bali.
+ *
+ * Lav et program der omregner din SU i dkk om til Indonesiske Rupiah.
+ */
+ 
+ public class valutaomregner {
+  public static void main(String[] args) {
+    int su              = 6321;
+    int rupiah          = 2004;
+    int valutaomregner  = su * rupiah;
+     
+    System.out.println("Du får " + valutaomregner + " Indonesiske rupiah i SU per måned.");
+  }
+ }
