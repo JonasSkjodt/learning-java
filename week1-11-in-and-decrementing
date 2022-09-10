@@ -1,0 +1,48 @@
+/**
+ * Du har set at der er forskellige måder at ændre heltals variable. Du skal nu
+ * undersøge hvor mange forskellige måder man kan få Java til at inkrementere
+ * et heltal med én.
+ * 
+ * Lav et program hvor du angiver et heltalsvariabel n der er lig 0, og udskriv så
+ * variablen. Ved brug af tegnene ‘+’, ’=’, og ‘1’ i forskellige konstellationer skal
+ * du nu forøge værdien med 1 ad gangen, og udskrive variablen ved hver
+ * forøgelse. Se hvor højt op du kan få din variabel uden gentaget kode eller
+ * fejl.
+ */
+ 
+ public class incrementor{
+  public static void main() {
+    int n = 0;
+    
+    System.out.println(n);
+    System.out.println(++n);
+    System.out.println(n+=1);
+    System.out.println(n=n+1);
+    
+  }
+ }
+ 
+ /**
+  * For god ordens skyld skal du nu dekrementere en værdi. Erstat alle ‘+’ tegn
+  * fra den forrige opgave med ‘-’.
+  * Reflektér nu på forskellen mellem ‘=+’ og ‘+=’, samt ‘=-’ og ‘-=’.
+  * Hint; prøv at kør ‘n + =1’ og ‘n = +1’.
+  */
+
+public class decrementor{
+  public static void main() {
+    int n = 0;
+    
+    System.out.println(n);
+    System.out.println(--n);
+    System.out.println(n-=1);
+    System.out.println(n=n-1);
+    
+  }
+ }
+ 
+ //Reflektion:
+ // Hvis vi skriver n =+1, så bliver n ligmed 1.
+ // hvis vi skriver n +=1, så tæller java det nuværende n og plusses med 1.
+ // dette kan testes ved at indsætte flere end en linje af
+ // System.out.println(n+=1); (eller indsætte det i et loop)
