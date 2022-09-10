@@ -1,0 +1,16 @@
+/**
+ * Øvelse 5
+ * Lav et program som initialiserer to variable fornavn (first_name) med værdien
+ * ”James” samt efternavn (last_name) med værdien ”Bond”. Få programmet til
+ * at udskrive strengen ”My name is Bond, James Bond”. Prøv nu at ændre de
+ * initialiserede værdier til dit eget fornavn og efternavn.
+ */
+ 
+ public class assignment5 {
+  public static void main(String[] args) {
+    String first_name = "James";
+    String last_name  = "Bond";
+    
+    System.out.println("My name is " + last_name + ", " + first_name + " " + last_name + ".");
+  }
+ }
