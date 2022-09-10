@@ -7,8 +7,24 @@
  *
  */
  
- // programmet udskriver -15, da burger*2 tager prædecens. (dvs -45*2 = -90 + 75 = -15)
- // Vi kan løse problemet ved at indsætte paranteser i regnestykket
- // feks:
- // System.out.println( (menu – burger) * 2);
- // så prisen bliver 60 kr (dvs (75-45) * 2 = 30 * 2 = 60)
+     // programmet udskriver -15, da burger*2 tager prædecens. (dvs -45*2 = -90 + 75 = -15)
+     // Vi kan løse problemet ved at indsætte paranteser i regnestykket
+     // feks:
+     // System.out.println( (menu – burger) * 2);
+     // så prisen bliver 60 kr (dvs (75-45) * 2 = 30 * 2 = 60)
+
+/**
+ * Hvad udskriver følgende program (og hvorfor)
+ *
+ * int days_worked = 20; // Antal dage arbejdet
+ * int weekly_salary = 1000; // Løn per uge (i kr)
+ * System.out.println(days_worked / 7 * weekly_salary);
+ *
+ */
+ 
+     // programmet læser fra venstre til højre og udregner herfra. 
+     // Efter udregnelsen udskriver det 2000, da regnestykket for programmet er
+     // 20 / 7 * 1000
+     // for at regne rigtigt, så skal man ændre int days_worked = 20 til double days_worked = 20.0
+     // og potentielt indsætte en parantes i regnestykket:
+     // System.out.println( (days_worked / 7) * weekly_salary);
