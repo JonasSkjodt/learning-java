@@ -1,0 +1,21 @@
+/**
+ * Kan du udskrive BMI med 2 decimaler?
+ */
+ 
+class BMI {
+  static void bmi() {
+    double weight = 84.5; // kg
+    double height = 1.85; // meter
+    double bmi = weight / (height * height);
+    
+    bmi = Math.round(bmi);  // Denne linje skal ændres til: bmi = Math.round(bmi*100) / 100.0; Forklaring #1
+      
+        System.out.println("Med vægten " + weight +
+        "kg og højden " + height +
+        "m er din bmi: " + bmi);
+}
+
+// #1
+// Math.round tæller op til et heltal.
+// For at ændre det er vi nødt til at gange bmi med 100 først og derefter dividere det med 100.0.
+// .0, da komma nul gør, at java registrerer det med decimaler.
