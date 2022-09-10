@@ -1,0 +1,25 @@
+/**
+ * Problem D: Add Two Numbers
+ *
+ * In this problem, your program should read two whole numbers (also called integers) from the input,
+ * and print out their sum.
+ * Input
+ * The input contains one line, which has two integers a and b,separated by a single space.
+ * The bounds on these values are 0 <= a,b <= 1 000 000.
+ *
+ * Output
+ * Output the sum of the two integers, a + b.
+ */
+ 
+ import java.util.Scanner;
+ 
+ public class addtwonumbers {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    
+    System.out.println(a + b);
+  }
+ }
