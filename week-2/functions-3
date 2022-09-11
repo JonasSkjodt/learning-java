@@ -3,26 +3,25 @@
  * Kald herefter begge funktioner og gem retur-værdierne. Print dem herefter.
  */
  
- class returnvalues {
+class returnvalues {
     //metode 1
-    static void fours(){
+    static int fours(){
         int a = 4;
         int b = 4;
-        int sum = a*b;
-        System.out.println(sum);
+        return a*b;
     }
     //metode 2
-    static void fives(){
+    static int fives(){
         int a = 5;
         int b = 5;
-        int sum = a*b;
-        System.out.println(sum);
+        return a*b;
     }
-    // main
+    
     public static void main(String[] args)
     {
         // Call functions
-        fours();
-        fives();
+        int a = fours();
+        int b = fives();
+        System.out.println(a + b);
     }
 }
