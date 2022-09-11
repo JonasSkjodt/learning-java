@@ -1,0 +1,82 @@
+/**
+ * Implementér spillet ’Game of Nim’. Bid mærke i at denne øvelse kan være svær.
+ *
+ * Du kan med fordel bruge scanneren ligesom vi gjorde i øvelse 8 til at
+ * muliggøre bruger input. Dertil skal vi bruge et par variable til at holde styr på
+ * hvilken spiller der er i gang med deres tur, og en til at holde styr på mængden
+ * af resterende tændstikker. Til at styre hvem der er i gang med deres tur kan
+ * du med fordel bruge en boolean da denne jo kun har to muligheder; sand
+ * eller falsk. Et trick hertil er at man kan skrive: ’isPlayerOne = !isPlayerOne’.
+ * Hver gang vi gør dette når vi tildeler isPlayerOne variablen en ny værdi,
+ * ’flipper’ vi værdien, i.e., ’false’ bliver til ’true’ og ’true’ bliver til ’false’ (Dette
+ * kan vi gøre da ’!’ anvendes som ’negation’ operator) .
+ */
+ 
+import java.util.Scanner;
+
+class nimgame {
+  static boolean run = true;
+  static int MatchLeft = 15;
+  static int playerLastTurn = 0;
+
+  public static void main(String args[]){
+    System.out.println("Welcome to the game of Nim!\nRules: there are 15 matches in a pile.\nTo win, you'll need to make your opponent take the last match.\nTake an amount between 1 and 3");
+    while(run){
+      System.out.println("\nThere are " + MatchLeft + " matches left!");
+      PlayersTurn();
+      ComputersTurn();
+    }
+    sc.close();
+  }
+
+  static boolean ComputersTurn(){
+    if(!run) {
+        return false;
+    }
+    System.out.println("Its Computers Turn!");
+    if(MatchLeft == 1){
+      run = false;
+      System.out.println("You Won!!");
+      return true;
+    }
+    int took = 5 - playerLastTurn;
+    if(took > 3) {
+        took = 3;
+    }
+    if(took < 1) {
+        took =1;
+    }
+    if((MatchLeft - took) == 0) {
+        took = 1;
+    }
+    if((MatchLeft - took) < 1) {
+        took = 3 - playerLastTurn;
+    }
+    MatchLeft -= took;
+    System.out.println("Computer took " + took + " matches!");
+    return true;
+  }
+
+  static Scanner sc = new Scanner(System.in);
+  static boolean PlayersTurn(){
+    if(!run) {
+        return false;
+    }
+    System.out.println("Its your Turn!");
+    if(MatchLeft == 1){
+      run = false;
+      System.out.println("You Lost!!");
+      return true;
+    }
+    System.out.print("How many matches do you take?: ");
+    int took = sc.nextInt();
+    if(took > 3 || took < 1){
+      System.out.println("Read the rules!!");
+      return false;
+    }
+    MatchLeft -= took;
+    System.out.println("You Took " + took + " matches!");
+    playerLastTurn = took;
+    return true;
+  }
+}
