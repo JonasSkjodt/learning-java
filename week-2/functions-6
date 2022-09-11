@@ -1,0 +1,61 @@
+/**
+ * Vi skal nu anvende debuggeren til at gennemløbe følgende program:
+ *
+ * static void start() {
+ *  int x = 1;
+ *   for (int i = 0; i < range(); i++) {
+ *     x = doubleNumber(x);
+ *     System.out.println(x);
+ *   }
+ *   x = pickNumber(x);
+ *   System.out.println(x);
+ * }
+ * static int range() {
+ * return 10;
+ *}
+ *
+ *static int doubleNumber(int x) {
+ *  return x*2;
+ *}
+ *
+ * static int pickNumber(int x) {
+ *  if (x < 50) {
+ *   return 5;
+ *  } else if (x < 25) {
+ *   return 10;
+ *  } else {
+ *   return 1;
+ *  }
+ *}
+ */
+
+// correct with class:
+
+public class todebug { 
+    static void start() {
+        int x = 1;
+        for (int i = 0; i < range(); i++) {
+            x = doubleNumber(x);
+            System.out.println(x);
+        }
+        x = pickNumber(x);
+        System.out.println(x);
+    }
+    static int range() {
+        return 10;
+    }
+    
+    static int doubleNumber(int x) {
+        return x*2;
+    }
+    
+    static int pickNumber(int x) {
+        if (x < 50) {
+            return 5;
+        } else if (x < 25) {
+            return 10;
+        } else {
+            return 1;
+        }
+    }
+}
