@@ -1,0 +1,28 @@
+/**
+ * Lav to funktioner: en som returnerer 5*5 og en anden som returnerer 4*4.
+ * Kald herefter begge funktioner og gem retur-værdierne. Print dem herefter.
+ */
+ 
+ class returnvalues {
+    //metode 1
+    static void fours(){
+        int a = 4;
+        int b = 4;
+        int sum = a*b;
+        System.out.println(sum);
+    }
+    //metode 2
+    static void fives(){
+        int a = 5;
+        int b = 5;
+        int sum = a*b;
+        System.out.println(sum);
+    }
+    // main
+    public static void main(String[] args)
+    {
+        // Call functions
+        fours();
+        fives();
+    }
+}
