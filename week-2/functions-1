@@ -1,0 +1,33 @@
+/**
+ * Lav nu fire funktioner der hhv. printer 4, 7 og 9 tabellen. Giv dem navne som 
+ * repræsenterer deres funktionalitet. Lav herefter en ny funktion som kalder 
+ * alle de andre funktioner. Kald denne 'tabeller'. Prøv til sidst at kør dem og se 
+ * hvad der bliver printet (får du printet det rigtige?).
+ */
+
+public class tabeller {
+    public static void main(){
+        // call the functions here
+        firtabellen();
+        syvtabellen();
+        nitabellen();
+    }
+    
+    public static void firtabellen(){
+        for(int i = 0; i <= 40; i=i+4){
+            System.out.println(i);
+        }
+    }
+
+    public static void syvtabellen(){
+        for(int i = 0; i <= 70; i=i+7){
+            System.out.println(i);
+        }    
+    }
+
+    public static void nitabellen(){
+        for(int i = 0; i <= 90; i=i+9){
+            System.out.println(i);
+        }    
+    }
+}
