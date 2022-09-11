@@ -1,0 +1,22 @@
+/**
+ * Tag øvelsen 'hvor meget vand?' fra første undervisningsgang og omskriv 
+ * denne til en funktion som vi kan kalde flere gange. Du kan eventuelt 
+ * modificere programmet nedenunder således at vægt (weight) gives som 
+ * parameter. Prøv herefter at kalde den flere gange. Du kan eventuelt prøve at 
+ * udvide programmet som vi gjorde i anden undervisningsgang hvor man også 
+ * skal angive hvor meget vand man drikker på nuværende tidspunkt.
+ */
+ 
+ public class Water {
+    public static void main(){
+        water(); // call the other method: water()
+    }
+    
+    static void water(){
+        double weight = 80.0;
+        double amount = 35.0;
+        double result = weight * amount;
+        double result_liters = result * 0.001;
+        System.out.println("Du bør drikke " + result_liters +"L dagligt.");
+    }
+}
