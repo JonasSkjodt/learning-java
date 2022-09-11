@@ -1,0 +1,40 @@
+/**
+ * 7a:
+ * Vi skal nu lave to funktioner hvor den ene kalder den anden. Den første 
+ * funktion beregner hvor mange kaniner vi ender med når vi efterlader x antal 
+ * sammen i et bur (og forventer at de er nogenlunde ligeligt fordelt mellem 
+ * hanner og hunner), altså hvor hurtigt de reproducerer efter en kort periode. 
+ * En pålidelig kilde fortæller at kaninerne reproducerer hvad der tilsvarer ’x!’ 
+ * (factorial). Altså, hvis vi satte 7 kaniner sammen vil det svare til at vi efter en 
+ * kort periode havde ’7!’ kaniner, eller 7*6*5*4*3*2*1. Du skal nu implementere 
+ * en funktion der gør dette for en variabel mængde kaniner (altså skal 
+ * funktionen tage dette som et argument), hvilket klart er lettest at gøre ved 
+ * brug af en løkke – men hvilken? 
+ */
+ 
+ public class rabbits {
+    static int rabbits(){
+        int i,cagedrabbits=1;  
+        int number=7; // factorial number, ie 7! or 7*6*5*4*3*2*1    
+          for(i=1;i<=number;i++){    
+              cagedrabbits=cagedrabbits*i;    
+          }    
+        return cagedrabbits;
+    }
+    
+    public static void main(){
+      System.out.println("The caged amount of rabbits has multiplied to: " + rabbits());
+    }
+}
+
+/**
+ * 7b:
+ * Nu ønsker vi så at gøre det lettere for vores kaninavlende venner at beregne 
+ * hvor mange kaniner de ender med hvis de samler deres kaniner. Du skal 
+ * derfor lave en funktion der (1) tager to parametre der repræsenterer de to 
+ * avleres antal af kaniner, (2) ligger tallene sammen og kalder den tidligere 
+ * metode med summen, og (3) printer antallet af kaniner de kan forvente, i stil 
+ * af:
+ *
+ * Hvis avler 'a' har 10 kaniner og avler 'b' har 3, kan I forvente 3628806 kaniner.
+ */
