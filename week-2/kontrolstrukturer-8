@@ -1,0 +1,35 @@
+/**
+ * Du skal nu færdiggøre kodestykket nedenunder således at man kan spille
+ * gæt et tal mod computeren. Koden der er skrevet vælger først et tilfældigt
+ * nummer, herefter initialiserer vi nogle variable til at holde styr på programmet.
+ *
+ * Din opgave er så at implementere koden som kommentarerne beskriver. Det
+ * skal her siges at ’guess = scanner.nextInt()’ tildeler (assign’er) et tal til
+ * variablen guess som brugeren af vores system taster ind. Denne variabel
+ * indeholder således det ’næste gæt’.
+ */
+ 
+import java.util.Scanner;
+import java.util.Random;
+
+class Guess {
+    static void guess() {
+        Random random = new Random();
+        Scanner scanner = new Scanner(System.in);
+        int secret = random.nextInt(100);
+        int tries = 0;
+        int guess = -1;
+        while(secret != guess) {// så længe der ikke er gættet rigtigt
+        System.out.println("Make a guess"); // output make a guess
+        guess = scanner.nextInt();  // indtast gæt
+        tries = tries + 1;          // opdatér 'tries'
+            if(guess < secret) { // hvis guess er mindre end secret, så udskriv 'for lavt'
+                System.out.println("for lavt");
+            } else {
+                System.out.println("for højt");
+            }
+        }
+        System.out.println("tillykke, du gættede tallet som var: " + secret); // skriv 'tillykke, du gættede tallet som var: ...'
+        System.out.println("du brugte " + tries + " gæt."); // skriv 'du brugte ... gæt'
+ }
+}
