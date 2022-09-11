@@ -1,0 +1,18 @@
+/**
+ * Omskriv din løsning fra Øvelse 2 (functions-2) således at den returnerer hvor meget vand 
+ * man bør drikke frem for at printe det. Kald herefter funktionen og print 
+ * resultatet.
+ */
+ 
+class Water {
+    static double water(){
+        double weight = 80.0;
+        double amount = 35.0;
+        double result = weight * amount;
+        return result * 0.001;
+    }
+ 
+    public static void main(){
+        System.out.println("Du bør drikke " + water() +"L dagligt.");    
+    }
+}
