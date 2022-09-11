@@ -1,0 +1,23 @@
+/**
+ * Tag nu problem 1 i øvelse 6, og lav koden om således at man bestemmer
+ * hvilken tabel der skal printes ved at ændre værdien af en ny variabel. Denne
+ * variabel kunne eventuelt hedde number (af typen integer).
+ */
+ 
+import java.util.Scanner;
+ 
+public class newclass {
+  public static void assignmentsix() {
+    Scanner sc = new Scanner(System.in);
+    int number = sc.nextInt();
+    
+    while(number != 1) {
+      System.out.println(number);
+      if(number % 2 == 0) {
+        number = number / 2;
+      } else {
+        number = number * 3 + 1;
+      }
+    }
+  }
+}
