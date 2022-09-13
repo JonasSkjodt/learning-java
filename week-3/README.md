@@ -6,8 +6,8 @@ Week 3 notes:
  * imports
  */
 
-\n import java.util.ArrayList; // ArrayList<>
-\n import java.util.Collections; // Collection.sort();
+<br /> import java.util.ArrayList; // ArrayList<>
+<br /> import java.util.Collections; // Collection.sort();
 
  /***
  * Standard ArrayList.
