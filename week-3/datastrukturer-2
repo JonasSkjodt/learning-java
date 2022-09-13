@@ -1,0 +1,23 @@
+/**
+ * Øvelse 2
+ * Hvad er forskellen på de to følgende måder at gennemløbe en liste på
+ * (programmerne gør præcist det samme)? Noter gerne dine overvejelser eller
+ * snak med en medstuderende.
+ */
+ 
+// 1: for loop
+// kan ændre i den nemmere
+
+for (int i = 0; i < liste.size(); i++) {
+ String element = liste.get(i);
+ System.out.println(i + ": '" + element + "'");
+}
+
+// 2: for-each loop
+// • Man løber altid alle værdierne i listen igennem, i rækkefølge
+// • Man behøver ikke selv fiske værdierne ud af listen (liste.get(i))
+// • Men man får intet at vide om værdiens index (dvs placering i listen)
+
+for(String element : liste){
+ System.out.println(i + ": '" + element + "'");
+}
