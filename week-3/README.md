@@ -2,18 +2,21 @@ Week 3 notes:
 
 ##ArrayList
 
+```java
 /**
  * imports
  */
 
-<br /> import java.util.ArrayList; // ArrayList<>
-<br /> import java.util.Collections; // Collection.sort();
+import java.util.ArrayList; // ArrayList<>
+import java.util.Collections; // Collection.sort();
+```
 
+```java
  /***
  * Standard ArrayList.
  * Example:
  *
-```java
+
 import java.util.ArrayList;
   public class Main {
     public static void main(String[] args) {
@@ -27,37 +30,45 @@ import java.util.ArrayList;
   }
  ***/
 ```
+
+```java
  /***
  *
  * liste.get(0);
  * Get the (number) from the array list
  * Example:
  */ 
+```
 
-  
+```java
  /***
  *
  * liste.set(0, 9);
  * set the number 9 in the array list on spot number (0)
  * Example:
  */
+```
 
+```java
  /***
  *
  * liste.remove(0);
  * Remove the specific string or int from the ArrayList
  * Example:
  */ 
+```
 
+```java
  /***
  *
  * liste.clear();
  * Clear the array list of all <integer> or <String>
  * Example:
  */ 
+```
 
 
-  
+```java
  /***
  *
  * liste.size(); count the amount of things in the array
@@ -76,8 +87,9 @@ import java.util.ArrayList;
   }
 }
  ***/
+```
 
-
+```java
  /***
  *
  * Collections.sort(liste);                                    
@@ -97,3 +109,4 @@ import java.util.ArrayList;
     }
 }
  ***/
+ ```
