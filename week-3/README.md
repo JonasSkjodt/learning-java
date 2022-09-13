@@ -13,17 +13,17 @@ Week 3 notes:
  * Standard ArrayList.
  * Example:
  *
- import java.util.ArrayList;
-  public class Main {
-    public static void main(String[] args) {
-      ArrayList<String> liste = new ArrayList<String>();
-      cars.add("Volvo");
-      cars.add("BMW");
-      cars.add("Ford");
-      cars.add("Mazda");
-      System.out.println(liste);
-    }
-  }
+<br /> import java.util.ArrayList;
+<br />  public class Main {
+<br />    public static void main(String[] args) {
+<br />      ArrayList<String> liste = new ArrayList<String>();
+<br />      cars.add("Volvo");
+<br />      cars.add("BMW");
+<br />      cars.add("Ford");
+<br />      cars.add("Mazda");
+<br />      System.out.println(liste);
+<br />    }
+<br />  }
  ***/
 
  /***
