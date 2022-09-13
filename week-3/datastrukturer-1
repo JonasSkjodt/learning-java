@@ -1,0 +1,23 @@
+/**
+ * Øvelse 1
+ *
+ * Lav en ArrayList som indeholder integers (bid mærke i at typen du skriver i
+ * ’<>’ nu skal være Integer og ikke int som vil plejer at skrive). Herefter skal du
+ * tilføje tallene 1-10 til listen. Hvad tror du ligger på plads #5 (list.get(5))? Tjek
+ * efter om du gættede rigtigt.
+ */
+
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(){  //metoden
+        ArrayList<Integer> liste; //erklærering af variabel liste af type...
+        liste = new ArrayList<>(); // instantiering af initialiseringen
+        
+        for (int i = 0; i <= 10; i++) {
+            liste.add(i); // Listen adder tallene til arraylisten
+        }
+        
+        System.out.println(liste.get(5));
+    }
+  }
