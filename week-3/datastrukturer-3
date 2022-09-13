@@ -1,4 +1,4 @@
-´´´java
+```java
 /**
  * Øvelse 3
  *
@@ -36,5 +36,5 @@ class lister {
     }
     
 }
-'''
+```
 
