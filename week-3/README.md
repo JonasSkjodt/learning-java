@@ -15,7 +15,7 @@ import java.util.Collections; // Collection.sort();
  /***
  * Standard ArrayList.
  * Example:
- *
+ */
 
 import java.util.ArrayList;
   public class Main {
@@ -28,7 +28,6 @@ import java.util.ArrayList;
       System.out.println(liste);
     }
   }
- ***/
 ```
 
 ```java
@@ -74,6 +73,7 @@ import java.util.ArrayList;
  * liste.size(); count the amount of things in the array
  * Example:
  */ 
+ 
  public class Main {
   public static void main(String[] args) {
     ArrayList<String> cars = new ArrayList<String>();
@@ -86,7 +86,6 @@ import java.util.ArrayList;
     }
   }
 }
- ***/
 ```
 
 ```java
@@ -95,7 +94,8 @@ import java.util.ArrayList;
  * Collections.sort(liste);                                    
  * sorterer alfabetiskt i string eller fra 0 og op i int
  * Example:
- *                                   
+ */
+ 
  public class arraylistz {
     public static void main(){
         ArrayList<Integer> liste = new ArrayList<>();
@@ -108,5 +108,4 @@ import java.util.ArrayList;
         }
     }
 }
- ***/
  ```
