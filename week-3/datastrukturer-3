@@ -1,0 +1,40 @@
+´´´java
+/**
+ * Øvelse 3
+ *
+ * Find minimum og gennemsnittet fra array listen
+ */
+ 
+import java.util.ArrayList;
+
+class lister {
+    static int minimum(ArrayList<Integer> liste){
+        int currentMin = liste.get(0);
+        for(int current : liste){
+            if (current < currentMin) {
+                currentMin = current;
+            }
+        }
+        return currentMin;
+    }
+    
+    static double avg(ArrayList<Integer> liste){
+        int sum = 0;
+        for(int current : liste){
+            sum = sum + current;
+        }
+        return (sum * 1.0) / liste.size();
+    }
+    
+    static void test() {
+    ArrayList<Integer> list = new ArrayList<>();
+    list.add(3);
+    list.add(4);
+    list.add(2);
+    list.add(1);
+    System.out.println(minimum(list));
+    }
+    
+}
+'''
+
