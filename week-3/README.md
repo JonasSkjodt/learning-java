@@ -4,14 +4,15 @@ Week 3 notes:
 
 /**
  * imports
- *
+ */
 
 import java.util.ArrayList; // ArrayList<>
 import java.util.Collections; // Collection.sort();
 
- ***
+ /***
  * Standard ArrayList.
  * Example:
+ *
  import java.util.ArrayList;
   public class Main {
     public static void main(String[] args) {
@@ -23,43 +24,44 @@ import java.util.Collections; // Collection.sort();
       System.out.println(liste);
     }
   }
+ ***/
 
- ***
+ /***
  *
  * liste.get(0);
  * Get the (number) from the array list
  * Example:
- * 
+ */ 
 
   
- ***
+ /***
  *
  * liste.set(0, 9);
  * set the number 9 in the array list on spot number (0)
  * Example:
- * 
+ */
 
- ***
+ /***
  *
  * liste.remove(0);
  * Remove the specific string or int from the ArrayList
  * Example:
- * 
+ */ 
 
- ***
+ /***
  *
  * liste.clear();
  * Clear the array list of all <integer> or <String>
  * Example:
- * 
+ */ 
 
 
   
- ***
+ /***
  *
  * liste.size(); count the amount of things in the array
  * Example:
- * 
+ */ 
  public class Main {
   public static void main(String[] args) {
     ArrayList<String> cars = new ArrayList<String>();
@@ -72,10 +74,10 @@ import java.util.Collections; // Collection.sort();
     }
   }
 }
- ***
+ ***/
 
 
- ***
+ /***
  *
  * Collections.sort(liste);                                    
  * sorterer alfabetiskt i string eller fra 0 og op i int
@@ -93,4 +95,4 @@ import java.util.Collections; // Collection.sort();
         }
     }
 }
- ***
+ ***/
