@@ -1,0 +1,38 @@
+/**
+ *
+ * Du skal implementere en funktion som tager to parametre: (1) en ArrayList der
+ * kan indeholde Strings og (2) en String. Funktionen skal returnere true hvis
+ * String argumentet er at finde i den ArrayList der er givet som argument.
+ * Du kan anvende koden neden under som en måde at teste din funktion på,
+ * men vi opfordrer til at du prøver med flere forskellige argumenter.
+ * Selvom du kan anvende ’==’ til at sammenligne to stykker tekst bør du i stedet
+ * skrive ’str.equals("some text")’.
+ */
+ 
+ import java.util.ArrayList;
+
+class listerArrayList {
+    static boolean contains(ArrayList<String> list, String element) {
+        boolean result = false;
+        for (String current: list) {
+            if(current.equals(element)){
+                result = true;
+            };
+        }
+        return false;
+    }
+    static void test() {
+    ArrayList<String> students; // erklæring af variabel af typen ArrayList
+    students = new ArrayList<>();// instantiering & initialisering af students
+    students.add("John");
+    students.add("Jane");
+    boolean isJim = contains(students, "Jim"); // vi kalder contains MED students
+    System.out.println(isJim);
+        String student = "Jane";
+        if (contains(students, student)) { // vi kalder contains MED students
+        System.out.println(student + " is a student");
+        } else {
+        System.out.println(student + " is NOT a student");
+        }
+    }
+}
