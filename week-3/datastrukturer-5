@@ -1,0 +1,35 @@
+/**
+ * HashSet<String> list = new HashSet<>();
+ */
+ 
+ import java.util.HashSet;
+
+class listerHashList {
+    static boolean contains(HashSet<String> list, String element) {
+        boolean result = false;
+        for (String current: list) {
+            if(current.equals(element)){
+                return true;
+            }
+        }
+        return false;
+    }
+    static void test() {
+    HashSet<String> students; // erklæring af variabel af typen ArrayList
+    students = new HashSet<>();// instantiering & initialisering af students
+    students.add("John");
+    students.add("Jane");
+    students.add("Jane");
+    students.add("Jane");
+    students.add("Jane");
+    students.add("John");
+    boolean isJim = contains(students, "Jim"); // vi kalder contains MED students
+    System.out.println(isJim);
+        String student = "Jane";
+        if (contains(students, student)) { // vi kalder contains MED students
+        System.out.println(student + " is a student");
+        } else {
+        System.out.println(student + " is NOT a student");
+        }
+    }
+}
