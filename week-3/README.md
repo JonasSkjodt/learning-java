@@ -1,6 +1,24 @@
 Week 3 notes:
 
-##ArrayList
+## Simple for loop with scanner
+
+```java
+import java.util.*;
+
+public class simpleloopwithscanner {
+    static void main(){
+        ArrayList<Integer> list = new ArrayList<>();
+        Scanner sc = new Scanner(System.in);
+        for(int i = 1; i<= 5;i++){
+            list.add(sc.nextInt());
+        }
+        System.out.println("our array: "+ list);
+    }
+}
+```
+
+
+## ArrayList
 
 ```java
 /**
