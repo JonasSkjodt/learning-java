@@ -168,3 +168,47 @@ public class Main {
   }
 }
  ```
+ 
+ ## LinkedList
+ 
+ A LinkedList is almost identical to an ArrayList. The difference is how they read the lists.
+ ArrayList does an index of the list, LinkedLists goes from a->b b->c c->d etc.
+ Example:
+ 
+ 
+ ```java
+ // -- erklæring af variabel ARRAYLIST
+List<String> guests = new ArrayList<>();
+// -- tilføj & fjerne elementer --
+    guests.add("Anna");
+    guests.add("Brian");
+    guests.add("Carla");
+    guests.remove(1);
+    System.out.println(guests.get(1));
+    System.out.println(guests.size());
+    // -- iteration --
+    for (int i=0; i<guests.size(); i++) {
+    String guest = guests.get(i);
+    System.out.println(guest);
+}
+for (String guest: guests) {
+System.out.println(guest);
+}
+
+ // -- erklæring af variabel LINKEDLIST
+List<String> guests = new LinkedList<>();
+// -- tilføj & fjerne elementer --
+    guests.add("Anna");
+    guests.add("Brian");
+    guests.add("Carla");
+    guests.remove(1);
+    System.out.println(guests.get(1));
+    System.out.println(guests.size());
+    // -- iteration --
+    for (int i=0; i<guests.size(); i++) {
+    String guest = guests.get(i);
+    System.out.println(guest);
+}
+for (String guest: guests) {
+System.out.println(guest);
+}
