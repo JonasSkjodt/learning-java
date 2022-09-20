@@ -11,7 +11,7 @@ public class simpleloopwithscanInteger {
     static void main(String[] args){
         ArrayList<Integer> list = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
-        for(int i = 1; i<= 3;i++){ // write integers 3 times to store in an array
+        for(int i = 1; i<= list.size();i++){ // write integers 3 times to store in an array
             list.add(sc.nextInt());
         }
         System.out.println("our array: "+ list);
@@ -24,7 +24,7 @@ public class simpleloopwithscanString {
     static void main(String[] args){
         ArrayList<String> list = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
-        for(int i = 1; i<= 3;i++){ // write 3 different strings to store in an array
+        for(int i = 1; i<= list.size();i++){ // write 3 different strings to store in an array
             list.add(sc.nextLine());
         }
         System.out.println("our array: "+ list);
