@@ -35,7 +35,7 @@ for (int i = 0; i < numbers.length; i++) {
   numbers[i] = numbers[i] + 1; // skrive
 }
 
-// for-each loop
+// to an arrayliste
 List<Integer> numbers = new ArrayList<>();
 :
 for (int i = 0; i < numbers.size(); i++) {
@@ -43,4 +43,19 @@ for (int i = 0; i < numbers.size(); i++) {
   numbers.set(i, numbers.get(i) + 1); // skrive
 }
 
+// for-each loop with the same as above
+int[] numbers = new int[10];
+:
+for (int number : numbers) {
+  System.out.println(number); // læse
+  // skrive: vi mangler en index (position)
+}
+
+//for-each loop with arraylist
+List<Integer> numbers = new ArrayList<>();
+:
+for (int number : numbers) {
+  System.out.println(number); // læse
+  // skrive: vi mangler en index (position)
+}
 ```
