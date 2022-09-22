@@ -11,8 +11,8 @@ Traversal: What is on every part of the list, from a->b b->c c->d etc.
 
 ## Arrays
 
-```java
 //decleration of an array
+```java
 int[] grades = new int[7]; // erklæring, instantiering og initialisering (angiv størrelsen af arrayen i []
 grades[0] = -3; // insert different integers to a specific position of the array
 grades[1] = 0;
@@ -24,7 +24,10 @@ grades[6] = 12;
 // læse:
 int grade = grades[3]; // declare a variable of position 3?
 System.out.println(grade); // print position 3
+```
 
+
+```java
 //iteration of array
 
 // for loop
@@ -58,4 +61,10 @@ for (int number : numbers) {
   System.out.println(number); // læse
   // skrive: vi mangler en index (position)
 }
+```
+
+// example of above
+```java
+
+
 ```
