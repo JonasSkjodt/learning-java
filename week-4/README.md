@@ -11,6 +11,10 @@ Traversal: What is on every part of the list, from a->b b->c c->d etc.
 
 ## Arrays
 
+Et array er en også en form for 'liste' af elementer.
+Et array er ikke en List eller Collection, men en indbygget datastruktur
+Et array har altid en fast størrelse (fastsat på instantieringstidspkt).
+
 //decleration of an array
 ```java
 int[] grades = new int[7]; // erklæring, instantiering og initialisering (angiv størrelsen af arrayen i []
